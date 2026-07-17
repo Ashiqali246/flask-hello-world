@@ -29,7 +29,7 @@ jobs:
           echo "Password length: ${#DOCKER_PASSWORD}"
         env:
           DOCKER_USERNAME: ashiqali246
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_PASSWORD: Mada@756.
 
       - name: Build Docker Image
         run: |
