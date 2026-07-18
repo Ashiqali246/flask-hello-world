@@ -33,7 +33,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKERUSERNAME }}flas-demo:latest .
+          docker build -t ${{ secrets.DOCKERUSERNAME }}/flas-demo:latest .
+
+      - name: List Docker Images
+        run: docker images
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
